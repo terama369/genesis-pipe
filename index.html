@@ -855,7 +855,7 @@
     }
 
     function saveToGas(type, text, history = null, callback = null) {
-      if (!WEB_APP_URL.includes("/macros/s/")) {
+      if (!WEB_APP_URL) {
         alert("⚠️ WEB_APP_URLが正しく設定されていません"); return;
       }
       fetch(WEB_APP_URL, {
